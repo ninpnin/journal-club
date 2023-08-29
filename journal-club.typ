@@ -4,7 +4,7 @@ This is the Machine learning and Statistics Journal Club. We gather roughly ever
 
 == Upcoming meetings
 
-=== 2023-09-14 – Active Testing @kossen2021active
+=== 2023-09-14 – Active Testing: Sample–Efficient Model Evaluation @kossen2021active
 
 #figure(
   image("img/active-testing.png", width: 60%),
@@ -27,5 +27,10 @@ Abstract: Strong inductive biases give humans the ability to quickly learn to pe
 
 Presenter: Isac Boström
 
+=== 2023-05-04 – Forecasting the movements of Bitcoin prices: an application of machine learning algorithms @pabucccu2023forecasting
+
+Abstract: Cryptocurrencies, such as Bitcoin, are one of the most controversial and complex technological innovations in today's financial system. This study aims to forecast the movements of Bitcoin prices at a high degree of accuracy. To this aim, four different Machine Learning (ML) algorithms are applied, namely, the Support Vector Machines (SVM), the Artificial Neural Network (ANN), the Naive Bayes (NB) and the Random Forest (RF) besides the logistic regression (LR) as a benchmark model. In order to test these algorithms, besides existing continuous dataset, discrete dataset was also created and used. For the evaluations of algorithm performances, the F statistic, accuracy statistic, the Mean Absolute Error (MAE), the Root Mean Square Error (RMSE) and the Root Absolute Error (RAE) metrics were used. The t test was used to compare the performances of the SVM, ANN, NB and RF with the performance of the LR. Empirical findings reveal that, while the RF has the highest forecasting performance in the continuous dataset, the NB has the lowest. On the other hand, while the ANN has the highest and the NB the lowest performance in the discrete dataset. Furthermore, the discrete dataset improves the overall forecasting performance in all algorithms (models) estimated.
+
+Presenter: Sahika Gökmen
 
 #bibliography("sources.bib", style:"chicago-author-date")
