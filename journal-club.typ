@@ -4,6 +4,18 @@ This is the Machine learning and Statistics Journal Club. We gather roughly ever
 
 == Upcoming meetings
 
+=== 2023-10-12 – Is BERT Robust to Label Noise? @zhu2022bert
+
+#figure(
+  image("img/bert-label-noise.png", width: 60%),
+)
+
+Abstract: Incorrect labels in training data occur when human annotators make mistakes or when the data is generated via weak or distant supervision. It has been shown that complex noise-handling techniques - by modeling, cleaning or filtering the noisy instances - are required to prevent models from fitting this label noise. However, we show in this work that, for text classification tasks with modern NLP models like BERT, over a variety of noise types, existing noisehandling methods do not always improve its performance, and may even deteriorate it, suggesting the need for further investigation. We also back our observations with a comprehensive analysis. 
+
+Presenter: Hannes Waldetoft
+
+== Past meetings
+
 === 2023-09-14 – Active Testing: Sample–Efficient Model Evaluation @kossen2021active
 
 #figure(
@@ -13,8 +25,6 @@ This is the Machine learning and Statistics Journal Club. We gather roughly ever
 Abstract: We introduce a new framework for sample-efficient model evaluation that we call active testing. While approaches like active learning reduce the number of labels needed for model training, existing literature largely ignores the cost of labeling test data, typically unrealistically assuming large test sets for model evaluation. This creates a disconnect to real applications, where test labels are important and just as expensive, eg for optimizing hyperparameters. Active testing addresses this by carefully selecting the test points to label, ensuring model evaluation is sample-efficient. To this end, we derive theoretically-grounded and intuitive acquisition strategies that are specifically tailored to the goals of active testing, noting these are distinct to those of active learning. As actively selecting labels introduces a bias; we further show how to remove this bias while reducing the variance of the estimator at the same time. Active testing is easy to implement and can be applied to any supervised machine learning method. We demonstrate its effectiveness on models including WideResNets and Gaussian processes on datasets including Fashion-MNIST and CIFAR-100.
 
 Presenter: Väinö Yrjänäinen
-
-== Past meetings
 
 === 2023-06-08 – Using natural language and program abstractions to instill human inductive biases in machines @kumar2022using
 
