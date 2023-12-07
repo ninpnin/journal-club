@@ -26,6 +26,12 @@ We present the first deep learning model to successfully learn control policies 
 
 Presenter: Andreas Östling
 
+=== 2023-11-09 – Liquid Time-constant Networks @hasani2021liquid
+
+We introduce a new class of time-continuous recurrent neural network models. Instead of declaring a learning system's dynamics by implicit nonlinearities, we construct networks of linear first-order dynamical systems modulated via nonlinear interlinked gates. The resulting models represent dynamical systems with varying (i.e., liquid) time-constants coupled to their hidden state, with outputs being computed by numerical differential equation solvers. These neural networks exhibit stable and bounded behavior, yield superior expressivity within the family of neural ordinary differential equations, and give rise to improved performance on time-series prediction tasks. To demonstrate these properties, we first take a theoretical approach to find bounds over their dynamics and compute their expressive power by the trajectory length measure in latent trajectory space. We then conduct a series of time-series prediction experiments to manifest the approximation capability of Liquid Time-Constant Networks (LTCs) compared to classical and modern RNNs.
+
+Presenter: Jakob Torgander
+
 === 2023-10-12 – Is BERT Robust to Label Noise? @zhu2022bert
 
 #figure(
