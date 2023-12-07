@@ -4,6 +4,28 @@ This is the Machine learning and Statistics Journal Club. We gather roughly ever
 
 == Upcoming meetings
 
+=== 2024-01-18 – Deep Learning-based Propensity Scores
+
+#figure(
+  image("img/vitals-autoencoder.png", width: 60%),
+)
+
+Due to the non-randomized nature of real-world data, prognostic factors need to be balanced, which is often done by propensity scores (PSs). This study aimed to investigate whether autoencoders, which are unsupervised deep learning architectures, might be leveraged to compute PS.
+
+Presenter: Chamika Porage
+
+== Past meetings
+
+=== 2023-12-07 – Playing Atari with Deep Reinforcement Learning
+
+#figure(
+  image("img/atari.png", width: 60%),
+)
+
+We present the first deep learning model to successfully learn control policies directly from high-dimensional sensory input using reinforcement learning. The model is a convolutional neural network, trained with a variant of Q-learning, whose input is raw pixels and whose output is a value function estimating future rewards. We apply our method to seven Atari 2600 games from the Arcade Learning Environment, with no adjustment of the architecture or learning algorithm. We find that it outperforms all previous approaches on six of the games and surpasses a human expert on three of them. 
+
+Presenter: Andreas Östling
+
 === 2023-10-12 – Is BERT Robust to Label Noise? @zhu2022bert
 
 #figure(
@@ -13,8 +35,6 @@ This is the Machine learning and Statistics Journal Club. We gather roughly ever
 Abstract: Incorrect labels in training data occur when human annotators make mistakes or when the data is generated via weak or distant supervision. It has been shown that complex noise-handling techniques - by modeling, cleaning or filtering the noisy instances - are required to prevent models from fitting this label noise. However, we show in this work that, for text classification tasks with modern NLP models like BERT, over a variety of noise types, existing noisehandling methods do not always improve its performance, and may even deteriorate it, suggesting the need for further investigation. We also back our observations with a comprehensive analysis. 
 
 Presenter: Hannes Waldetoft
-
-== Past meetings
 
 === 2023-09-14 – Active Testing: Sample–Efficient Model Evaluation @kossen2021active
 
