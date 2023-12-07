@@ -4,7 +4,7 @@ This is the Machine learning and Statistics Journal Club. We gather roughly ever
 
 == Upcoming meetings
 
-=== 2024-01-18 – Deep Learning-based Propensity Scores
+=== 2024-01-18 – Deep Learning-based Propensity Scores @weberpals2021deep
 
 #figure(
   image("img/vitals-autoencoder.png", width: 60%),
@@ -16,7 +16,7 @@ Presenter: Chamika Porage
 
 == Past meetings
 
-=== 2023-12-07 – Playing Atari with Deep Reinforcement Learning
+=== 2023-12-07 – Playing Atari with Deep Reinforcement Learning @mnih2013playing
 
 #figure(
   image("img/atari.png", width: 60%),
