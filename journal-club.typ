@@ -4,6 +4,12 @@ This is the Machine learning and Statistics Journal Club. We gather roughly ever
 
 == Upcoming meetings
 
+=== 2024-02-22 – Agnostic Bayesian Learning of Ensembles @lacoste2014agnostic
+
+We propose a method for producing ensembles of predictors based on holdout estimations of their generalization performances. This approach uses a prior directly on the performance of predictors taken from a finite set of candidates and attempts to infer which one is best. Using Bayesian inference, we can thus obtain a posterior that represents our uncertainty about that choice and construct a weighted ensemble of predictors accordingly. This approach has the advantage of not requiring that the predictors be probabilistic themselves, can deal with arbitrary measures of performance and does not assume that the data was actually generated from any of the predictors in the ensemble. Since the problem of finding the best (as opposed to the true) predictor among a class is known as agnostic PAC-learning, we refer to our method as agnostic Bayesian learning. We also propose a method to address the case where the performance estimate is obtained from k-fold cross validation. While being efficient and easily adjustable to any loss function, our experiments confirm that the agnostic Bayes approach is state of the art compared to common baselines such as model selection based on k-fold cross-validation or a linear combination of predictor outputs.
+
+== Past meetings
+
 === 2024-01-18 – Deep Learning-based Propensity Scores @weberpals2021deep
 
 #figure(
@@ -13,8 +19,6 @@ This is the Machine learning and Statistics Journal Club. We gather roughly ever
 Due to the non-randomized nature of real-world data, prognostic factors need to be balanced, which is often done by propensity scores (PSs). This study aimed to investigate whether autoencoders, which are unsupervised deep learning architectures, might be leveraged to compute PS.
 
 Presenter: Chamika Porage
-
-== Past meetings
 
 === 2023-12-07 – Playing Atari with Deep Reinforcement Learning @mnih2013playing
 
