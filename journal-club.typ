@@ -4,7 +4,7 @@ This is the Machine learning and Statistics Journal Club. We gather roughly ever
 
 == Upcoming meetings
 
-=== 2024-04-16 – Using imperfect surrogates for downstream inference @egami2024using
+=== 2024-05-16 – Using imperfect surrogates for downstream inference @egami2024using
 
 #figure(
   image("img/egami.png", width: 60%),
