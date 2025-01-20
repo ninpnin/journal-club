@@ -12,6 +12,16 @@ Presenter: Isac Boström
 
 == Past meetings
 
+=== 2024-10-31 – Microcanonical Hamiltonian Monte Carlo @robnik2023microcanonical
+
+#figure(
+  image("img/microcanonical.png", width: 60%),
+)
+
+We develop Microcanonical Hamiltonian Monte Carlo (MCHMC), a class of models that follow fixed energy Hamiltonian dynamics, in contrast to Hamiltonian Monte Carlo (HMC), which follows canonical distribution with different energy levels. MCHMC tunes the Hamiltonian function such that the marginal of the uniform distribution on the constant-energy-surface over the momentum variables gives the desired target distribution. We show that MCHMC requires occasional energy-conserving billiard-like momentum bounces for ergodicity, analogous to momentum resampling in HMC. We generalize the concept of bounces to a continuous version with partial direction preserving bounces at every step, which gives energy-conserving underdamped Langevin-like dynamics with non-Gaussian noise (MCLMC). MCHMC and MCLMC exhibit favorable scalings with condition number and dimensionality. We develop an efficient hyperparameter tuning scheme that achieves high performance and consistently outperforms NUTS HMC on several standard benchmark problems, in some cases by orders of magnitude.
+
+Presenter: Väinö Yrjänäinen
+
 === 2024-09-26 – Efficient few-shot learning without prompts @tunstall2022efficient
 
 #figure(
