@@ -4,7 +4,7 @@ This is the Machine learning and Statistics Journal Club. We gather roughly ever
 
 == Upcoming meetings
 
-=== 2025-03-13 – Bayesian Learning via Stochastic Gradient Langevin Dynamics @wenzel2020good
+=== 2025-03-13 – How Good is the Bayes Posterior in Deep Neural Networks Really?  @wenzel2020good
 
 #figure(
   image("img/wenzel2020good.png", width: 60%),
