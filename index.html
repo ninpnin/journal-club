@@ -28,10 +28,88 @@
     <![endif]-->
   </head>
   <body>
-    <h1>UU Stats and ML Journal Club</h1>
-    <p>This is the Machine learning and Statistics Journal Club. We gather
-    roughly every third week.</p>
+    <h1>UU Stats, Math and Machine Learning Journal Club</h1>
+    <p>This is the Statistics, Math and Machine learning Journal Club. We
+      gather every second week. The journal club starts with a 20 minute
+    presentation of the article, followed by a discussion.</p>
     <h2>Upcoming meetings</h2>
+    <h3>2025-09-25 – ActiveClean: Interactive Data Cleaning For Statistical
+    Modeling by <span class="citation"
+    data-cites="krishnan2016activeclean">[krishnan2016activeclean]</span></h3>
+    <figure>
+      <p><img src="img/krishnan2016activeclean.png" style="width:60.0%" /></p>
+    </figure>
+    <p>Analysts often clean dirty data iteratively–cleaning some data,
+      executing the analysis, and then cleaning more data based on the
+      results. We explore the iterative cleaning process in the context of
+      statistical model training, which is an increasingly popular form of
+      data analytics. We propose ActiveClean, which allows for progressive and
+      iterative cleaning in statistical modeling problems while preserving
+      convergence guarantees. ActiveClean supports an important class of
+      models called convex loss models (e.g., linear regression and SVMs), and
+      prioritizes cleaning those records likely to affect the results. We
+      evaluate ActiveClean on five real-world datasets UCI Adult, UCI EEG,
+      MNIST, IMDB, and Dollars For Docs with both real and synthetic errors.
+      The results show that our proposed optimizations can improve model
+      accuracy by up-to 2.5x for the same amount of data cleaned. Furthermore
+      for a fixed cleaning budget and on all real dirty datasets, ActiveClean
+      returns more accurate models than uniform sampling and Active
+    Learning.</p>
+    <h2>Past meetings</h2>
+    <h3>2025-09-11 – Parameter Inference based on Gaussian Processes
+    Informed by Nonlinear Partial</h3>
+    <p>Diﬀerential Equations by <span class="citation"
+    data-cites="li2024parameter">[li2024parameter]</span></p>
+    <p>Partial differential equations (PDEs) are widely used for the
+      description of physical and engineering phenomena. Some key parameters
+      involved in PDEs, which represent certain physical properties with
+      important scientific interpretations, are difficult or even impossible
+      to measure directly. Estimating these parameters from noisy and sparse
+      experimental data of related physical quantities is an important task.
+      Many methods for PDE parameter inference involve a large number of
+      evaluations for numerical solutions to PDEs through algorithms such as
+      the finite element method, which can be time consuming, especially for
+      nonlinear PDEs. In this paper, we propose a novel method for the
+      inference of unknown parameters in PDEs, called the PDE-informed
+      Gaussian process (PIGP)–based parameter inference method. Through
+      modeling the PDE solution as a Gaussian process (GP), we derive the
+      manifold constraints induced by the (linear) PDE structure such that,
+      under the constraints, the GP satisfies the PDE. For nonlinear PDEs, we
+      propose an augmentation method that transforms the nonlinear PDE into an
+      equivalent PDE system linear in all derivatives, which our PIGP-based
+      method can handle. The proposed method can be applied to a broad
+      spectrum of nonlinear PDEs. The PIGP-based method can be applied to
+      multidimensional PDE systems and PDE systems with unobserved components.
+      Like conventional Bayesian approaches, the method can provide
+      uncertainty quantification for both the unknown parameters and the PDE
+      solution. The PIGP-based method also completely bypasses the numerical
+      solver for PDEs. The proposed method is demonstrated through several
+    application examples from different areas.</p>
+    <p>Presenter: Elvis Schmidt</p>
+    <h3>2025-06-19 – Martingale Posterior Distributions by <span
+      class="citation"
+    data-cites="fong2023martingale">[fong2023martingale]</span></h3>
+    <p>The prior distribution is the usual starting point for Bayesian
+      uncertainty. In this paper, we present a different perspective that
+      focuses on missing observations as the source of statistical
+      uncertainty, with the parameter of interest being known precisely given
+      the entire population. We argue that the foundation of Bayesian
+      inference is to assign a distribution on missing observations
+      conditional on what has been observed. In the i.i.d. setting with an
+      observed sample of size n, the Bayesian would thus assign a predictive
+      distribution on the missing Yn+1:∞ conditional on Y1:n, which then
+      induces a distribution on the parameter. We utilize Doob’s theorem,
+      which relies on martingales, to show that choosing the Bayesian
+      predictive distribution returns the conventional posterior as the
+      distribution of the parameter. Taking this as our cue, we relax the
+      predictive machine, avoiding the need for the predictive to be derived
+      solely from the usual prior to posterior to predictive density formula.
+      We introduce the martingale posterior distribution, which returns
+      Bayesian uncertainty on any statistic via the direct specification of
+      the joint predictive. To that end, we introduce new predictive
+      methodologies for multivariate density estimation, regression and
+    classification that build upon recent work on bivariate copulas.</p>
+    <p>Presenter: Jakob Torgander</p>
     <h3>2025-04-17 – Deep regression learning with optimal loss function
     <span class="citation"
     data-cites="wang2024deep">[wang2024deep]</span></h3>
@@ -68,7 +146,6 @@
       article are available online, including a standardized description of
     the materials available for reproducing the work.</p>
     <p>Presenter: Hannes Waldetoft</p>
-    <h2>Past meetings</h2>
     <h3>2025-03-13 – How Good is the Bayes Posterior in Deep Neural Networks
     Really? <span class="citation"
     data-cites="wenzel2020good">[wenzel2020good]</span></h3>

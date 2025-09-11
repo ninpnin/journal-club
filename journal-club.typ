@@ -1,16 +1,37 @@
-= UU Stats and ML Journal Club
+= UU Stats, Math and Machine Learning Journal Club
 
-This is the Machine learning and Statistics Journal Club. We gather roughly every third week.
+This is the Statistics, Math and Machine learning Journal Club. We gather every second week. The journal club starts with a 20 minute presentation of the article, followed by a discussion.
 
 == Upcoming meetings
+
+=== 2025-09-25 – ActiveClean: Interactive Data Cleaning For Statistical Modeling by @krishnan2016activeclean
+
+#figure(
+  image("img/krishnan2016activeclean.png", width: 60%),
+)
+
+Analysts often clean dirty data iteratively--cleaning some data, executing the analysis, and then cleaning more data based on the results. We explore the iterative cleaning process in the context of statistical model training, which is an increasingly popular form of data analytics. We propose ActiveClean, which allows for progressive and iterative cleaning in statistical modeling problems while preserving convergence guarantees. ActiveClean supports an important class of models called convex loss models (e.g., linear regression and SVMs), and prioritizes cleaning those records likely to affect the results. We evaluate ActiveClean on five real-world datasets UCI Adult, UCI EEG, MNIST, IMDB, and Dollars For Docs with both real and synthetic errors. The results show that our proposed optimizations can improve model accuracy by up-to 2.5x for the same amount of data cleaned. Furthermore for a fixed cleaning budget and on all real dirty datasets, ActiveClean returns more accurate models than uniform sampling and Active Learning.
+
+== Past meetings
+
+=== 2025-09-11 – Parameter Inference based on Gaussian Processes Informed by Nonlinear Partial
+Diﬀerential Equations by @li2024parameter
+
+Partial differential equations (PDEs) are widely used for the description of physical and engineering phenomena. Some key parameters involved in PDEs, which represent certain physical properties with important scientific interpretations, are difficult or even impossible to measure directly. Estimating these parameters from noisy and sparse experimental data of related physical quantities is an important task. Many methods for PDE parameter inference involve a large number of evaluations for numerical solutions to PDEs through algorithms such as the finite element method, which can be time consuming, especially for nonlinear PDEs. In this paper, we propose a novel method for the inference of unknown parameters in PDEs, called the PDE-informed Gaussian process (PIGP)–based parameter inference method. Through modeling the PDE solution as a Gaussian process (GP), we derive the manifold constraints induced by the (linear) PDE structure such that, under the constraints, the GP satisfies the PDE. For nonlinear PDEs, we propose an augmentation method that transforms the nonlinear PDE into an equivalent PDE system linear in all derivatives, which our PIGP-based method can handle. The proposed method can be applied to a broad spectrum of nonlinear PDEs. The PIGP-based method can be applied to multidimensional PDE systems and PDE systems with unobserved components. Like conventional Bayesian approaches, the method can provide uncertainty quantification for both the unknown parameters and the PDE solution. The PIGP-based method also completely bypasses the numerical solver for PDEs. The proposed method is demonstrated through several application examples from different areas.
+
+Presenter: Elvis Schmidt 
+
+=== 2025-06-19 – Martingale Posterior Distributions by @fong2023martingale
+
+The prior distribution is the usual starting point for Bayesian uncertainty. In this paper, we present a different perspective that focuses on missing observations as the source of statistical uncertainty, with the parameter of interest being known precisely given the entire population. We argue that the foundation of Bayesian inference is to assign a distribution on missing observations conditional on what has been observed. In the i.i.d. setting with an observed sample of size n, the Bayesian would thus assign a predictive distribution on the missing Yn+1:∞ conditional on Y1:n, which then induces a distribution on the parameter. We utilize Doob’s theorem, which relies on martingales, to show that choosing the Bayesian predictive distribution returns the conventional posterior as the distribution of the parameter. Taking this as our cue, we relax the predictive machine, avoiding the need for the predictive to be derived solely from the usual prior to posterior to predictive density formula. We introduce the martingale posterior distribution, which returns Bayesian uncertainty on any statistic via the direct specification of the joint predictive. To that end, we introduce new predictive methodologies for multivariate density estimation, regression and classification that build upon recent work on bivariate copulas.
+
+Presenter: Jakob Torgander
 
 === 2025-04-17 – Deep regression learning with optimal loss function  @wang2024deep
 
 In this article, we develop a novel efficient and robust nonparametric regression estimator under a framework of a feedforward neural network (FNN). There are several interesting characteristics for the proposed estimator. First, the loss function is built upon an estimated maximum likelihood function, which integrates the information from observed data as well as the information from the data distribution. Consequently, the resulting estimator has desirable optimal properties, such as efficiency. Second, different from the traditional maximum likelihood estimation (MLE), the proposed method avoids the specification of the distribution, making it adaptable to various distributions such as heavy tails and multimodal or heterogeneous distributions. Third, the proposed loss function relies on probabilities rather than direct observations as in least square loss, contributing to the robustness of the proposed estimator. Finally, the proposed loss function involves a nonparametric regression function only. This enables the direct application of the existing packages, simplifying the computational and programming requirements. We establish the large sample property of the proposed estimator in terms of its excess risk and minimax near-optimal rate. The theoretical results demonstrate that the proposed estimator is equivalent to the true MLE where the density function is known in terms of excess risk. Our simulation studies show that the proposed estimator outperforms the existing methods based on prediction accuracy, efficiency and robustness. Particularly, it is comparable to the MLE with the known density and even gets slightly better as the sample size increases. This implies that the adaptive and data-driven loss function from the estimated density may offer an additional avenue for capturing valuable information. We further apply the proposed method to four real data examples, resulting in significantly reduced out-of-sample prediction errors compared to existing methods. Supplementary materials for this article are available online, including a standardized description of the materials available for reproducing the work.
 
 Presenter: Hannes Waldetoft
-
-== Past meetings
 
 === 2025-03-13 – How Good is the Bayes Posterior in Deep Neural Networks Really?  @wenzel2020good
 
