@@ -2,7 +2,50 @@
 
 This is the Statistics, Math and Machine learning Journal Club. We gather every second week. The journal club starts with a 20 minute presentation of the article, followed by a discussion.
 
-== Upcoming meetings
+//== Upcoming meetings
+
+== Past meetings
+
+=== 2025-12-18 Double Descent Demystified – by @schaeffer2023double
+
+Double descent is a surprising phenomenon in machine learning, in which as the number of model parameters grows relative to the number of data, test error drops as models grow ever larger into the highly overparameterized (data undersampled) regime. This drop in test error flies against classical learning theory on overfitting and has arguably underpinned the success of large models in machine learning. This non-monotonic behavior of test loss depends on the number of data, the dimensionality of the data and the number of model parameters. Here, we briefly describe double descent, then provide an explanation of why double descent occurs in an informal and approachable manner, requiring only familiarity with linear algebra and introductory probability. We provide visual intuition using polynomial regression, then mathematically analyze double descent with ordinary linear regression and identify three interpretable factors that, when simultaneously all present, together create double descent. We demonstrate that double descent occurs on real data when using ordinary linear regression, then demonstrate that double descent does not occur when any of the three factors are ablated. We use this understanding to shed light on recent observations in nonlinear models concerning superposition and double descent. Code is publicly available. 
+
+Presenter: Hannes
+
+=== 2025-12-04 – survextrap: a package for flexible and transparent survival extrapolation by @jackson2023survextrap
+
+Health policy decisions are often informed by estimates of long-term survival based primarily on short-term data. A range of methods are available to include longer-term information, but there has previously been no comprehensive and accessible tool for implementing these.
+This paper introduces a novel model and software package for parametric survival modelling of individual-level, right-censored data, optionally combined with summary survival data on one or more time periods. It could be used to estimate long-term survival based on short-term data from a clinical trial, combined with longer-term disease registry or population data, or elicited judgements.
+
+Presenter: Maiya
+
+=== 2025-11-20 – The CMA evolution strategy: A tutorial by @hansen2016cma
+
+This tutorial introduces the CMA Evolution Strategy (ES), where CMA stands for Covariance
+Matrix Adaptation. The CMA-ES is a stochastic, or randomized, method for real-parameter
+(continuous domain) optimization of non-linear, non-convex functions. We try to motivate
+and derive the algorithm from intuitive concepts and from requirements of non-linear, non-
+convex search in continuous domain.
+
+Presenter: Jakob
+
+=== 2025-11-06 – Interpretable Machine Learning for Science with PySR and SymbolicRegression.jl by @cranmer2023interpretable
+
+PySR is an open-source library for practical symbolic regression, a type of machine learning which aims to discover human-interpretable symbolic models. PySR was developed to democratize and popularize symbolic regression for the sciences, and is built on a high-performance distributed back-end, a flexible search algorithm, and interfaces with several deep learning packages. PySR's internal search algorithm is a multi-population evolutionary algorithm, which consists of a unique evolve-simplify-optimize loop, designed for optimization of unknown scalar constants in newly-discovered empirical expressions. PySR's backend is the extremely optimized Julia library this http URL, which can be used directly from Julia. It is capable of fusing user-defined operators into SIMD kernels at runtime, performing automatic differentiation, and distributing populations of expressions to thousands of cores across a cluster. In describing this software, we also introduce a new benchmark, "EmpiricalBench," to quantify the applicability of symbolic regression algorithms in science. This benchmark measures recovery of historical empirical equations from original and synthetic datasets. 
+
+Presenter: Will
+
+=== 2025-10-23 – Interpreting biologically informed neural networks by @hartman2023interpreting
+
+The incorporation of machine learning methods into proteomics workflows improves the identification of disease-relevant biomarkers and biological pathways. However, machine learning models, such as deep neural networks, typically suffer from lack of interpretability. Here, we present a deep learning approach to combine biological pathway analysis and biomarker identification to increase the interpretability of proteomics experiments. Our approach integrates a priori knowledge of the relationships between proteins and biological pathways and biological processes into sparse neural networks to create biologically informed neural networks. We employ these networks to differentiate between clinical subphenotypes of septic acute kidney injury and COVID-19, as well as acute respiratory distress syndrome of different aetiologies. To gain biological insight into the complex syndromes, we utilize feature attribution-methods to introspect the networks for the identification of proteins and pathways important for distinguishing between subtypes. The algorithms are implemented in a freely available open source Python-package (https://github.com/InfectionMedicineProteomics/BINN).
+
+Presenter: Cici
+
+=== 2025-10-09 – Bayesian Synthetic Likelihood by @price2018bayesian
+
+Having the ability to work with complex models can be highly beneficial. However, complex models often have intractable likelihoods, so methods that involve evaluation of the likelihood function are infeasible. In these situations, the benefits of working with likelihood-free methods become apparent. Likelihood-free methods, such as parametric Bayesian indirect likelihood that uses the likelihood of an alternative parametric auxiliary model, have been explored throughout the literature as a viable alternative when the model of interest is complex. One of these methods is called the synthetic likelihood (SL), which uses a multivariate normal approximation of the distribution of a set of summary statistics. This article explores the accuracy and computational efficiency of the Bayesian version of the synthetic likelihood (BSL) approach in comparison to a competitor known as approximate Bayesian computation (ABC) and its sensitivity to its tuning parameters and assumptions. We relate BSL to pseudo-marginal methods and propose to use an alternative SL that uses an unbiased estimator of the SL, when the summary statistics have a multivariate normal distribution. Several applications of varying complexity are considered to illustrate the findings of this article. Supplemental materials are available online. Computer code for implementing the methods on all examples is available at https://github.com/cdrovandi/Bayesian-Synthetic-Likelihood.
+
+Presenter: Ben
 
 === 2025-09-25 – ActiveClean: Interactive Data Cleaning For Statistical Modeling by @krishnan2016activeclean
 
@@ -14,7 +57,6 @@ Analysts often clean dirty data iteratively--cleaning some data, executing the a
 
 Presenter: Väinö Yrjänäinen
 
-== Past meetings
 
 === 2025-09-11 – Parameter Inference based on Gaussian Processes Informed by Nonlinear Partial
 Diﬀerential Equations by @li2024parameter
